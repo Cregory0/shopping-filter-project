@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+      integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
+      crossorigin="anonymous"
+    />
+    <title>Shopping Site</title>
+  </head>
+  <body>
+    <!--------------- Nav Bar ----------------->
+
+    <nav id="nav-bar">
+      <div id="logo">
+        <h1>Shopping Site</h1>
+      </div>
+      <ul id="nav-links">
+        <li><a href="#" id="woman-nav">Woman</a></li>
+        <li><a href="#" id="men-nav">Men</a></li>
+        <li><a href="#" id="boys-nav">Boys</a></li>
+        <li><a href="#" id="girls-nav">Girls</a></li>
+      </ul>
+
+      <div id="search-site">
+        <form id="search-form">
+          <i class="fas fa-search"></i>
+          <input type="text" id="search-bar" placeholder="Search" />
+        </form>
+        <i class="fas fa-user"></i>
+        <i class="fas fa-heart"></i>
+        <i class="fas fa-shopping-cart"></i>
+      </div>
+    </nav>
+
+    <!--------------- Main Shop Section ----------->
+
+    <section id="shop-section">
+      <div id="filter-bar">
+        <div id="category-container">
+          <h4>Category</h4>
+
+          <form>
+            <label class="label">
+              <input type="checkbox" class="checkbox" id="woman" name="woman" />
+              <span class="checkmark"></span>
+              <span class="checkbox-name">Woman</span>
+            </label>
+
+            <label class="label">
+              <input type="checkbox" class="checkbox" id="men" name="men" />
+              <span class="checkmark"></span>
+              <span class="checkbox-name">Men</span>
+            </label>
+
+            <label class="label">
+              <input type="checkbox" class="checkbox" id="boys" name="boys" />
+              <span class="checkmark"></span>
+              <span class="checkbox-name">Boys</span>
+            </label>
+            <label class="label">
+              <input type="checkbox" class="checkbox" id="girls" name="girls" />
+              <span class="checkmark"></span>
+              <span class="checkbox-name">Girls</span>
+            </label>
+          </form>
+        </div>
+
+        <div id="type-container">
+          <h4>Type</h4>
+
+          <form>
+            <label class="label">
+              <input
+                type="checkbox"
+                class="checkbox"
+                id="t-shirt"
+                name="t-shirt"
+              />
+              <span class="checkmark"></span>
+              <span class="checkbox-name">T-Shirt</span>
+            </label>
+            <label class="label">
+              <input
+                type="checkbox"
+                class="checkbox"
+                id="trousers"
+                name="trousers"
+              />
+              <span class="checkmark"></span>
+              <span class="checkbox-name">Trousers</span>
+            </label>
+            <label class="label">
+              <input type="checkbox" class="checkbox" id="dress" name="dress" />
+              <span class="checkmark"></span>
+              <span class="checkbox-name">Dress</span>
+            </label>
+
+            <label class="label">
+              <input
+                type="checkbox"
+                class="checkbox"
+                id="sleepsuit"
+                name="sleepsuit"
+              />
+              <span class="checkmark"></span>
+              <span class="checkbox-name">Sleepsuit</span>
+            </label>
+          </form>
+        </div>
+
+        <div id="color-container">
+          <h4>Color</h4>
+          <div id="color-wrapper">
+            <div class="color" data-color="red"></div>
+            <div class="color" data-color="denim"></div>
+            <div class="color" data-color="light-brown"></div>
+            <div class="color" data-color="dark-blue"></div>
+
+            <div class="color" data-color="black"></div>
+            <div class="color" data-color="navy-blue"></div>
+          </div>
+        </div>
+      </div>
+
+      <div id="shop-container"></div>
+    </section>
+
+    <script src="./app.js"></script>
+  </body>
+</html>
